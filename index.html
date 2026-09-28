@@ -233,6 +233,46 @@
     .card,.method{box-shadow:none;break-inside:avoid}
     a{color:inherit}
   }
+  .status{
+    flex:none;
+    font-size:.72rem;font-weight:800;letter-spacing:.02em;
+    border-radius:999px;padding:.18rem .58rem;
+    border:1px solid transparent;white-space:nowrap;
+  }
+  .status.pilot{background:var(--new-bg);color:var(--new-ink);border-color:color-mix(in srgb, var(--new-ink) 22%, transparent)}
+  .status.works{background:var(--pivot-bg);color:var(--pivot-ink);border-color:color-mix(in srgb, var(--pivot-ink) 22%, transparent)}
+  .status.demo{background:var(--park-bg);color:var(--park-ink);border-color:color-mix(in srgb, var(--park-ink) 25%, transparent)}
+  .status.folio{background:var(--chip);color:var(--muted);border-color:var(--line)}
+  .legend{display:flex;flex-wrap:wrap;gap:.45rem .8rem;margin:0 0 1rem;padding:0;list-style:none;color:var(--muted);font-size:.85rem}
+  .legend li{display:flex;align-items:center;gap:.4rem}
+  .ask{
+    background:var(--bg-2);
+    border-inline-start:3px solid var(--accent);
+    border-start-end-radius:10px;
+    border-end-end-radius:10px;
+    padding:.55rem .75rem;
+    font-size:.92rem;color:var(--ink);
+  }
+  .ask b{display:block;font-size:.72rem;letter-spacing:.04em;color:var(--accent);margin-bottom:.15rem}
+  .cta .ondemand{color:var(--muted);font-weight:650}
+  .contact{
+    margin:2.6rem 0 0;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:1.35rem 1.2rem 1.25rem;
+    box-shadow:var(--shadow);
+  }
+  .contact h2{margin:0 0 .55rem;font-size:1.35rem}
+  .contact p{margin:0 0 .8rem;color:var(--muted)}
+  .contact .note{font-size:.88rem;margin:0}
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:750;
+    background:var(--accent);color:var(--card);
+    border-radius:999px;padding:.5rem 1rem;margin:0 0 .8rem;
+  }
+  .btn:hover{text-decoration:none;filter:brightness(1.08)}
+  [hidden]{display:none !important}
 </style>
 </head>
 <body>
@@ -244,10 +284,11 @@
     <p class="tag">סטודנט למדעי המחשב באפקה. בונה דמואים חיים בדפדפן, בודק אותם מול השוק עם מקורות, ומשאיר רק מה שעובד — או כותב במפורש שזה דמו.</p>
     <div class="links">
       <a href="https://github.com/Swissystem7">GitHub</a>
-      <a href="mailto:aviran2606@gmail.com">aviran2606@gmail.com</a>
+      <a href="#contact">יצירת קשר</a>
     </div>
     <nav class="jump" aria-label="מעבר בתוך הדף">
-      <a href="#projects">שבעה פרויקטים</a>
+      <a href="#projects">אחד־עשר פרויקטים</a>
+      <a href="#contact">יצירת קשר</a>
       <a href="#method">איך אני עובד</a>
     </nav>
   </header>
@@ -255,61 +296,178 @@
   <main>
     <div class="section-head" id="projects">
       <h2>פרויקטים</h2>
-      <p>כל דמו רץ בלי התקנה. בשישה ריפואים הפסק יושב ב־RESEARCH.md; פנים־מדריך חדש — בלי פסק שוק.</p>
+      <p>המצב נכון ל־28.9.2026. אין כאן מחירים: אף פרויקט עוד לא הוכיח שמישהו ישלם עליו.</p>
     </div>
+    <ul class="legend" aria-label="מקרא סטטוס">
+      <li><span class="status pilot">פיילוט מחפש משתתפים</span>הכלי רץ, ואני מחפש מי שינסה אותו בחינם</li>
+      <li><span class="status works">כלי עובד</span>עושה את מה שכתוב, בלי משתמשים מאומתים</li>
+      <li><span class="status demo">דמו</span>מדגים רעיון; חלקים מסומנים כדוגמה</li>
+      <li><span class="status folio">פורטפוליו</span>עבודה להצגה, לא מוצר</li>
+    </ul>
 
     <div class="grid">
       <article class="card">
         <div class="card-top">
-          <h3>PanimGuide<span class="en">פנים־מדריך · מורשת</span></h3>
-          <span class="verdict new">חדש</span>
+          <h3>ErrandFlow<span class="en">סידורים של משק בית</span></h3>
+          <span class="status pilot">פיילוט מחפש משתתפים</span>
         </div>
-        <p>מדריך עברי, מימין־לשמאל, למורשת הטקסטואלית של חכמת הפנים במסורת היהודית־קבלית. סקירה ממוקדת מקורות, מילון עם תרשימי SVG מופשטים, דף היסטוריה על דחיית הפיזיוגנומיה המדעית, ודף מקורות עם תאריך בדיקה. במכוון לא כלי אבחון: אין מצלמה, אין העלאת תמונה, ואין ניתוח או ניקוד של אדם חי. המסורת מוצגת כשכבת תרבות וטקסט — לא שיטה מדעית לשפיטת בני אדם.</p>
-        <p class="standout"><b>מה בולט</b>אם אי אפשר לאמת מקור — נכתב «לא נמצא מקור». הסמל גאומטרי, לא פנים.</p>
+        <p>מדביקים רשימת סידורים של הבית ומקבלים סדר מוצע ליום; כל אחד מסמן «אני לוקח», ואת התוכנית מעתיקים לוואטסאפ. קובץ HTML אחד, בלי שרת ובלי חשבון. אין סנכרון בין מכשירים.</p>
+        <p class="ask"><b>מה אני מחפש</b>מחפשים 10 משקי בית לפיילוט חינמי — בודקים יחד אם הסדר המוצע באמת חוסך זמן.</p>
         <div class="chips">
-          <span class="chip">עברית RTL</span>
           <span class="chip">Vanilla JS</span>
-          <span class="chip">בלי תלויות</span>
+          <span class="chip">בלי שרת</span>
+          <span class="chip">פסק שוק: PIVOT</span>
         </div>
         <div class="cta">
-          <a href="https://swissystem7.github.io/PanimGuide/">דמו חי</a>
-          <a href="https://github.com/Swissystem7/PanimGuide">קוד</a>
+          <a href="#contact">להצטרפות לפיילוט</a>
+          <a class="ondemand" href="#contact">הדגמה לפי בקשה</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>PeerEd<span class="en">שיבוץ חונכים</span></h3>
+          <span class="status pilot">פיילוט מחפש משתתפים</span>
+        </div>
+        <p>משבץ חונכים לתלמידים לפי מקצוע, אזור וחפיפת שעות, ומראה מי נשאר בלי זוג. רץ כולו בדפדפן, בלי שרת, ולא מקבל שמות או פרטים מזהים.</p>
+        <p class="ask"><b>מה אני מחפש</b>רכזי חונכות — כלי שיבוץ חינמי. מחפש רכז אחד שיריץ איתו סבב שיבוץ אמיתי.</p>
+        <div class="chips">
+          <span class="chip">Vanilla JS</span>
+          <span class="chip">בלי מידע אישי</span>
+          <span class="chip">פסק שוק: PIVOT</span>
+        </div>
+        <div class="cta">
+          <a href="#contact">לפנייה</a>
+          <a class="ondemand" href="#contact">הדגמה לפי בקשה</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>EcoExchange<span class="en">ציוד מסעדות יד שנייה</span></h3>
+          <span class="status demo">דמו</span>
+        </div>
+        <p>היום זה דף קטלוג עם סינון וחיפוש, והפריטים בו הם דוגמאות — לא מודעות אמיתיות. הכיוון: תיווך ידני של ציוד מטבח ממסעדות ובתי קפה שנסגרים. השירות עוד לא פעל מול אף עסק.</p>
+        <p class="ask"><b>מה אני מחפש</b>מסעדה שנסגרת? נמכור את הציוד בשבילך.</p>
+        <div class="chips">
+          <span class="chip">תיווך ידני</span>
+          <span class="chip">קטלוג לדוגמה</span>
+          <span class="chip">פסק שוק: PIVOT</span>
+        </div>
+        <div class="cta">
+          <a href="#contact">לפנייה</a>
+          <a class="ondemand" href="#contact">הדגמה לפי בקשה</a>
         </div>
       </article>
 
       <article class="card">
         <div class="card-top">
           <h3>ParkWiz<span class="en">חניית רחוב · נתניה</span></h3>
-          <span class="verdict pivot">PIVOT</span>
+          <span class="status demo">דמו</span>
         </div>
-        <p>דמו מפה לחניית רחוב בנתניה: סיכוי (לא הבטחה) לפי שעה, ודיווח קהילה «אני עוזב». אין שרת, אין הזנה עירונית חיה, ואין צינור מצלמה. לפיילוט יש ערכה מקומית — היוריסטיקת בהירות על תמונה סטטית — ודף השוואת דיוק מול ספירת פקח (סדרת דוגמה מסומנת sample; דיוק בשטח לא נמדד). המחקר פסק PIVOT: אין קונה לדיווח קהילה; הכיוון הוא תפוסה אנונימית ממצלמה עירונית קיימת אחת, בלי LPR.</p>
-        <p class="standout"><b>מה בולט</b>דיווח הקהילה באמת מזיז את האחוז. ערכת הפיילוט והדוח קוראים מאותו מודול — לא צינור מצלמה חי.</p>
+        <p>מפת חניית רחוב בנתניה: סיכוי (לא הבטחה) לפי שעה, ודיווח קהילה «אני עוזב». אין הזנה עירונית חיה ואין צינור מצלמה; יש ערכת פיילוט מקומית, ודיוק בשטח עוד לא נמדד.</p>
+        <p class="ask"><b>מה אני מחפש</b>סקר תפוסה ממצלמה קיימת — לעירייה או ליועץ תנועה. ספירה אנונימית, בלי זיהוי לוחיות רישוי.</p>
         <div class="chips">
           <span class="chip">Vanilla JS</span>
           <span class="chip">Leaflet</span>
-          <span class="chip">ערכת פיילוט</span>
+          <span class="chip">פסק שוק: PIVOT</span>
         </div>
         <div class="cta">
           <a href="https://swissystem7.github.io/ParkWiz/">דמו חי</a>
           <a href="https://github.com/Swissystem7/ParkWiz">קוד</a>
+          <a href="#contact">לפנייה</a>
         </div>
       </article>
 
       <article class="card">
         <div class="card-top">
-          <h3>MelodyMath<span class="en">חשבון + סוניפיקציה</span></h3>
-          <span class="verdict park">PARK</span>
+          <h3>AlbumScan<span class="en">אלבומי תמונות ישנים</span></h3>
+          <span class="status works">כלי עובד</span>
         </div>
-        <p>שני דמואים נפרדים בריפו אחד — לא חבילה אחת לחינוך מיוחד. הראשון: תרגול לכיתות א׳–ד׳ עם אבחון, מצב כיתה, וערכת פיילוט למורה (4 שבועות, חינם): דף הפעלה, דוח מקומי, דפי עבודה ומכתב להורה. הכל ב־localStorage; אין סנכרון בין מכשירים. השני: סוניפיקציה של גרפי פונקציות בעברית, כולל משחק ניחוש ודף 807. אין שרת, אין חשבון, ואין משתמש שאומת. המחקר פסק PARK: Desmos כבר נותן סוניפיקציה בחינם, ואין קונה משלם.</p>
-        <p class="standout"><b>מה בולט</b>האודיו אמיתי ב־Web Audio. ערכת הפיילוט כנה: בלי «שולט» ובלי טענת יעילות.</p>
+        <p>מצלמים עמוד אלבום, והכלי מאתר את התמונות בו, חותך אותן מהקובץ המקורי, מתקן צבעים ומוריד ZIP — הכל בדפדפן, בלי העלאה לשרת. הגרסה הזאת עדיין בענף פיתוח, ונבדקה רק על עמודים מחוללים, לא על צילום אמיתי.</p>
+        <p class="ask"><b>מה אני מחפש</b>חיתוך אלבומים בדפדפן, בלי העלאה — מחפש הורים שיש להם אלבום ישן (למשל לעבודת שורשים) וינסו אותו.</p>
+        <div class="chips">
+          <span class="chip">Canvas</span>
+          <span class="chip">בלי העלאה</span>
+          <span class="chip">פסק שוק: PARK</span>
+        </div>
+        <div class="cta">
+          <a href="#contact">לפנייה</a>
+          <a class="ondemand" href="#contact">הדגמה לפי בקשה</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>ScoutAI<span class="en">מדד שקוף · כדורגל</span></h3>
+          <span class="status works">כלי עובד</span>
+        </div>
+        <p>כלי לימוד בדפדפן: בונים ציון מרוכב לשחקנים מנתוני StatsBomb Open Data, עם נוסחה גלויה, סליידרים ומקור על כל שורה. לא שירות סקאוטינג ולא AI; הרישיון של הנתונים אוסר שימוש מסחרי.</p>
+        <p class="ask"><b>מה אני מחפש</b>מסגרת שמלמדת ניתוח ספורט ורוצה שיעור מעשי בעברית על בניית מדד — מחפש שותף אחד לפיילוט.</p>
+        <div class="chips">
+          <span class="chip">StatsBomb Open Data</span>
+          <span class="chip">Vanilla JS</span>
+          <span class="chip">פסק שוק: PIVOT</span>
+        </div>
+        <div class="cta">
+          <a href="https://swissystem7.github.io/ScoutAI/">דמו חי</a>
+          <a href="https://github.com/Swissystem7/ScoutAI">קוד</a>
+          <a href="#contact">לפנייה</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>MelodyMath<span class="en">תרגול חשבון · א׳–ד׳</span></h3>
+          <span class="status demo">דמו</span>
+        </div>
+        <p>תרגול חשבון לכיתות א׳–ד׳ עם מצב כיתה וערכת פיילוט למורה. הכל נשמר בדפדפן: אין חשבון, אין שרת ואין סנכרון בין מכשירים. בריפו גם דמו נפרד של סוניפיקציית גרפים.</p>
+        <p class="ask"><b>מה אני מחפש</b>מחנכות שילוב שינסו את הכלי בכיתה — חינם, בלי חשבון.</p>
         <div class="chips">
           <span class="chip">Web Audio</span>
           <span class="chip">Vanilla JS</span>
-          <span class="chip">ערכת מורה</span>
+          <span class="chip">פסק שוק: PARK</span>
         </div>
         <div class="cta">
           <a href="https://swissystem7.github.io/MelodyMath/">דמו חי</a>
           <a href="https://github.com/Swissystem7/MelodyMath">קוד</a>
+          <a href="#contact">לפנייה</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>TrainerHub<span class="en">תוכנית אימון</span></h3>
+          <span class="status demo">דמו</span>
+        </div>
+        <p>למאמן עצמאי: מהעדפות מתאמן לתוכנית אימון שבועית, עם ספריית סרטונים בעברית, לינק בלי התחברות וסיכום לוואטסאפ. אין סליקה ואין לקוח משלם.</p>
+        <p class="ask"><b>מה אני מחפש</b>מאמנים עצמאיים לשיחה קצרה: על מה, אם בכלל, הייתם משלמים?</p>
+        <div class="chips">
+          <span class="chip">Vanilla JS</span>
+          <span class="chip">wa.me</span>
+          <span class="chip">פסק שוק: PARK</span>
+        </div>
+        <div class="cta">
+          <a href="https://swissystem7.github.io/TrainerHub/">דמו חי</a>
+          <a href="https://github.com/Swissystem7/TrainerHub">קוד</a>
+          <a href="#contact">לפנייה</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-top">
+          <h3>SmartMount<span class="en">קונספט חומרה</span></h3>
+          <span class="status folio">פורטפוליו</span>
+        </div>
+        <p>קושחת ESP32 ומעבדה וירטואלית לתושבת טלוויזיה שמטה את המסך כשיש בוהק, עם קונסולת תקלות. הקושחה עוד לא רצה על לוח אמיתי, והאלגוריתם לא כויל.</p>
+        <div class="chips">
+          <span class="chip">ESP32</span>
+          <span class="chip">קושחה</span>
+          <span class="chip">פסק שוק: PARK</span>
+        </div>
+        <div class="cta">
+          <a href="https://swissystem7.github.io/SmartMount/">דמו חי</a>
+          <a href="https://github.com/Swissystem7/SmartMount">קוד</a>
         </div>
       </article>
 
@@ -333,62 +491,38 @@
 
       <article class="card">
         <div class="card-top">
-          <h3>ScoutAI<span class="en">מדד שקוף · כדורגל</span></h3>
-          <span class="verdict pivot">PIVOT</span>
+          <h3>PanimGuide<span class="en">פנים־מדריך · מורשת</span></h3>
+          <span class="verdict new">חדש</span>
         </div>
-        <p>כלי לימוד בדפדפן: איך מרכיבים ציון מרוכב מנתוני StatsBomb Open Data, עם מקור ותווית provenance על כל שורה. זה לא שירות סקאוטינג, לא AI, ולא מוצר דוחות. הנוסחה גלויה — 0.4 Grit / 0.3 Involvement / 0.3 Clutch — משקלות ידניות. יש בונה מדד (סליידרים, Δ מול הבסיס) ושיעור «מלכודת הפיצ׳רים» שמלמד למה ניתוח פנים אינו מדד — בלי לממש ניתוח פנים. המחקר פסק PIVOT: הרישיון אוסר מסחר, ואין כיסוי לליגות ישראליות.</p>
-        <p class="standout"><b>מה בולט</b>הסליידרים בונים את המדד מחדש. ב־trap/ רואים הוכחה מעגלית ומה מפריך אותה.</p>
+        <p>מדריך עברי, מימין־לשמאל, למורשת הטקסטואלית של חכמת הפנים במסורת היהודית־קבלית. סקירה ממוקדת מקורות, מילון עם תרשימי SVG מופשטים, דף היסטוריה על דחיית הפיזיוגנומיה המדעית, ודף מקורות עם תאריך בדיקה. במכוון לא כלי אבחון: אין מצלמה, אין העלאת תמונה, ואין ניתוח או ניקוד של אדם חי. המסורת מוצגת כשכבת תרבות וטקסט — לא שיטה מדעית לשפיטת בני אדם.</p>
+        <p class="standout"><b>מה בולט</b>אם אי אפשר לאמת מקור — נכתב «לא נמצא מקור». הסמל גאומטרי, לא פנים.</p>
         <div class="chips">
-          <span class="chip">StatsBomb Open Data</span>
+          <span class="chip">עברית RTL</span>
           <span class="chip">Vanilla JS</span>
-          <span class="chip">חינוכי</span>
+          <span class="chip">בלי תלויות</span>
         </div>
         <div class="cta">
-          <a href="https://swissystem7.github.io/ScoutAI/">דמו חי</a>
-          <a href="https://github.com/Swissystem7/ScoutAI">קוד</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <h3>SmartMount<span class="en">קונספט חומרה</span></h3>
-          <span class="verdict park">PARK</span>
-        </div>
-        <p>הדגמת תושבת טלוויזיה: שני חיישני BH1750 מודדים יחס אור, ומנוע צעד אמור להטות את המסך כשיש בוהק. יש קושחת ESP32, מעבדה וירטואלית עם קונסולת תקלות (חיישן / WiFi / גבול פאנל), מפרט בנייה וגאומטריית בוהק. הקושחה נכתבה ללוח אמיתי אך טרם רצה מול חומרה, והאלגוריתם לא כויל. המחקר פסק PARK: השוק פתר בוהק בציפוי הפאנל, לא בזרוע ממונעת.</p>
-        <p class="standout"><b>מה בולט</b>קריאת חיישן כושלת מחזיקה זווית — לא מטה למקסימום. בקונסולה רואים את אותו כלל בלי לוח.</p>
-        <div class="chips">
-          <span class="chip">ESP32</span>
-          <span class="chip">קושחה</span>
-          <span class="chip">קונסולת תקלות</span>
-        </div>
-        <div class="cta">
-          <a href="https://swissystem7.github.io/SmartMount/">דמו חי</a>
-          <a href="https://github.com/Swissystem7/SmartMount">קוד</a>
-        </div>
-      </article>
-
-      <article class="card">
-        <div class="card-top">
-          <h3>TrainerHub<span class="en">תוכנית אימון</span></h3>
-          <span class="verdict park">PARK</span>
-        </div>
-        <p>דמו למאמן עצמאי: מהעדפות מתאמן לתוכנית שבועית שמעדיפה קליפים אמיתיים מהקטלוג כשהוא טעון. יש ספריית 78 סרטונים בעברית (חיפוש, סינון, הרכבת אימון), נגן אימון, לינק בלי התחברות, וסיכום ל־<code>wa.me</code>. הקליפים עצמם מחוץ לריפו — הנגן מופיע רק אם הקובץ נמצא ב־<code>videos/</code>. פענוח AI לא רץ ב־Pages. אין סליקה, ואין ספריית 95 סרטונים בריפו. המחקר פסק PARK: הכלים הישראליים כבר מוכרים עברית + וואטסאפ.</p>
-        <p class="standout"><b>מה בולט</b>המנוע בוחר קליפ אמיתי כשיש מיפוי. כוח, היפרטרופיה וסיבולת באמת מחליפים סכימה. התוכנית נוסעת ב־hash.</p>
-        <div class="chips">
-          <span class="chip">Vanilla JS</span>
-          <span class="chip">ספריית סרטונים</span>
-          <span class="chip">wa.me</span>
-        </div>
-        <div class="cta">
-          <a href="https://swissystem7.github.io/TrainerHub/">דמו חי</a>
-          <a href="https://github.com/Swissystem7/TrainerHub">קוד</a>
+          <a href="https://swissystem7.github.io/PanimGuide/">דמו חי</a>
+          <a href="https://github.com/Swissystem7/PanimGuide">קוד</a>
         </div>
       </article>
     </div>
 
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">יצירת קשר</h2>
+      <p>רוצים להצטרף לפיילוט, לראות הדגמה של פרויקט שהקוד שלו פרטי, או לשאול שאלה? כתבו כאן.</p>
+      <div id="contact-direct" hidden>
+        <a class="btn" id="contact-direct-link" href="#contact">לפנייה ישירה</a>
+      </div>
+      <div id="contact-issue">
+        <a class="btn" href="https://github.com/Swissystem7/swissystem7.github.io/issues/new?template=contact.yml">פתיחת פנייה ב־GitHub</a>
+        <p class="note">הפנייה נפתחת כ־issue ציבורי בריפו של האתר, ודורשת חשבון GitHub. כל אחד יכול לקרוא אותה — אל תכתבו מספר טלפון, כתובת או פרטים אישיים.</p>
+      </div>
+    </section>
+
     <section class="method" id="method">
       <h2>איך אני עובד</h2>
-      <p>לא בונים עוד פיצ׳ר כדי להרגיש התקדמות. שישה ריפואים עברו את אותו מחזור, עם מקורות ולא עם תחושות. בחמישה מהם המסמך המלא יושב ב־<code>RESEARCH.md</code>; ב־ScoutAI הפסק כתוב ב־README, ומחקר הכסף ב־<code>MONETIZATION.md</code>. פנים־מדריך חדש, בלי פסק שוק.</p>
+      <p>לא בונים עוד פיצ׳ר כדי להרגיש התקדמות. הפרויקטים עברו את אותו מחזור, עם מקורות ולא עם תחושות. בספרינט של 28.9.2026 כל פרויקט קיבל ציון כן מ־0 עד 10 (כאב, מי משלם, תחרות, בנייה לבד, מוכנות קוד, זמן לשקל ראשון) — ואף אחד לא עבר את 5. לכן אין כאן מחירים, אלא פיילוטים חינמיים עם תנאי עצירה. פנים־מדריך חדש, בלי פסק שוק.</p>
       <ol class="steps">
         <li><strong><span class="n">01</span>סקירת קוד חיצונית</strong><span>מישהו מבחוץ קורא את מה שרץ באמת, לא את הפיץ׳. באגים של יושרה (לולאות חיות מזויפות, מדדים שלא מחוברים, «פרו» בלי מנוי) יורדים לפני שהולכים לשוק.</span></li>
         <li><strong><span class="n">02</span>מחקר שוק עם מקורות</strong><span>מי המתחרה, מי הקונה שמשלם היום, ומה הראיות. מחיר בלי דף רשמי מסומן «לא נמצא מקור». אין נפח שוק מומצא.</span></li>
@@ -403,5 +537,23 @@
     <p>© אבירן סוויסה · הדף הזה סטטי: בלי CDN, בלי מסגרת, בלי מעקב.</p>
   </footer>
 </div>
+<script>
+// ערוץ הפנייה הישיר — הבעלים ממלא ערך אחד כאן. ריק = מוצג רק טופס ה־issue הציבורי.
+// ערכים מותרים: https://…  ·  mailto:…  ·  tel:…
+const CONTACT = '';
+
+(function () {
+  var value = String(CONTACT || '').trim();
+  if (!/^(https:\/\/|mailto:|tel:)\S+$/i.test(value)) return;
+  var direct = document.getElementById('contact-direct');
+  var link = document.getElementById('contact-direct-link');
+  var issue = document.getElementById('contact-issue');
+  if (!direct || !link || !issue) return;
+  link.href = value;
+  if (/^https:/i.test(value)) { link.target = '_blank'; link.rel = 'noopener'; }
+  direct.hidden = false;
+  issue.hidden = true;
+})();
+</script>
 </body>
 </html>
