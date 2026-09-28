@@ -1,0 +1,42 @@
+name: פנייה / הצטרפות לפיילוט
+description: פנייה לגבי אחד הפרויקטים — פיילוט, הדגמה או שאלה.
+title: "פנייה: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **שימו לב: הפנייה הזאת ציבורית.** כל מי שנכנס לריפו יכול לקרוא אותה.
+        אל תכתבו כאן מספר טלפון, כתובת מייל, כתובת מגורים או כל פרט אישי אחר. אחזור אליכם כאן, בתגובה ל־issue.
+  - type: input
+    id: who
+    attributes:
+      label: שם / ארגון
+      description: שם פרטי או שם הארגון מספיקים.
+    validations:
+      required: true
+  - type: dropdown
+    id: project
+    attributes:
+      label: איזה פרויקט
+      options:
+        - ErrandFlow — פיילוט למשקי בית
+        - PeerEd — שיבוץ חונכים לרכזים
+        - EcoExchange — מכירת ציוד ממסעדה שנסגרת
+        - ParkWiz — סקר תפוסה ממצלמה קיימת
+        - AlbumScan — חיתוך אלבומים בדפדפן
+        - ScoutAI — כלי לימוד / פיילוט
+        - MelodyMath — ניסוי בכיתה
+        - TrainerHub — שיחה עם מאמן
+        - SmartMount
+        - PassPilot
+        - PanimGuide
+        - אחר / כללי
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: מה צריך
+      description: מה תרצו — להצטרף לפיילוט, לראות הדגמה, לשאול משהו? בלי פרטים אישיים.
+    validations:
+      required: true
