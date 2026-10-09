@@ -2,7 +2,7 @@
 
 סטודנט למדעי המחשב באפקה. בונה דמואים חיים בדפדפן, בודק אותם מול השוק עם מקורות, ומשאיר רק מה שעובד — או כותב במפורש שזה דמו.
 
-**[פורטפוליו](https://swissystem7.github.io/)** · [GitHub](https://github.com/Swissystem7) · [דוא״ל](mailto:aviran2606@gmail.com)
+**[פורטפוליו](https://swissystem7.github.io/)** · [GitHub](https://github.com/Swissystem7) · [יצירת קשר](https://swissystem7.github.io/#contact)
 
 Software-engineering student at Afeka. Live browser demos, source-backed market research, and an explicit KEEP / PIVOT / PARK verdict where research exists.
 
@@ -10,23 +10,29 @@ Software-engineering student at Afeka. Live browser demos, source-backed market 
 
 ## פרויקטים
 
-כל דמו רץ ב־GitHub Pages, בלי התקנה. התיאור כאן תואם את ה־README של הריפו — לא את פיץ׳ ההאקתון.
+המצב נכון ל־28.9.2026. אין כאן מחירים: אף פרויקט עוד לא הוכיח שמישהו ישלם עליו. «הדגמה לפי בקשה» = הריפו פרטי ואין דף ציבורי; פונים דרך [יצירת קשר](https://swissystem7.github.io/#contact).
 
-| פרויקט | מה זה באמת | פסק | דמו | קוד |
+| פרויקט | מה הוא עושה היום | סטטוס | מה אני מחפש | קישורים |
 |---|---|---|---|---|
-| **PanimGuide** | מדריך עברי RTL למורשת הטקסטואלית של חכמת הפנים. לא כלי אבחון: אין מצלמה, אין העלאת תמונה, אין ניתוח של אדם חי. כולל דף היסטוריה על דחיית הפיזיוגנומיה המדעית. | חדש | [דמו](https://swissystem7.github.io/PanimGuide/) | [PanimGuide](https://github.com/Swissystem7/PanimGuide) |
-| **ParkWiz** | מפת חניית רחוב בנתניה עם דיווח «אני עוזב». אין הזנה עירונית חיה ואין צינור מצלמה. יש ערכת פיילוט מקומית והשוואת דיוק מול ספירת פקח (סדרת דוגמה). הכיוון: תפוסה אנונימית ממצלמה קיימת, בלי LPR. | PIVOT | [דמו](https://swissystem7.github.io/ParkWiz/) | [ParkWiz](https://github.com/Swissystem7/ParkWiz) |
-| **MelodyMath** | שני דמואים נפרדים: תרגול חשבון לכיתות א׳–ד׳ עם ערכת פיילוט למורה (4 שבועות), וסוניפיקציה של גרפים בעברית. אין משתמש שאומת. | PARK | [דמו](https://swissystem7.github.io/MelodyMath/) | [MelodyMath](https://github.com/Swissystem7/MelodyMath) |
-| **PassPilot** | אבחון לפי מבנה מבחן בארבעה קורסי אפקה: דוח מרחק ממבנה, קוד PP1, ותוכנית לפי תאריך מבחן. לא מודל הסתברות מכויל. ציון עובר באפקה הוא 60. | PIVOT | [דמו](https://swissystem7.github.io/PassPilot/) | [PassPilot](https://github.com/Swissystem7/PassPilot) |
-| **ScoutAI** | כלי לימוד: איך מרכיבים ציון מרוכב מנתוני StatsBomb Open Data. בונה מדד + שיעור מלכודת הפיצ׳רים. לא שירות סקאוטינג ולא AI. הרישיון אוסר מסחר. | PIVOT | [דמו](https://swissystem7.github.io/ScoutAI/) | [ScoutAI](https://github.com/Swissystem7/ScoutAI) |
-| **SmartMount** | קונספט חומרה: קושחת ESP32 + מעבדה עם קונסולת תקלות (חיישן / WiFi / גבול פאנל). הקושחה טרם רצה מול לוח. | PARK | [דמו](https://swissystem7.github.io/SmartMount/) | [SmartMount](https://github.com/Swissystem7/SmartMount) |
-| **TrainerHub** | בונה תוכנית שבועית שמעדיפה קליפים מהקטלוג + ספריית 78 סרטונים בעברית. הקליפים עצמם מחוץ לריפו. אין סליקה ואין ספריית 95 בריפו. | PARK | [דמו](https://swissystem7.github.io/TrainerHub/) | [TrainerHub](https://github.com/Swissystem7/TrainerHub) |
+| **ErrandFlow** | מדביקים רשימת סידורים של הבית ומקבלים סדר מוצע ליום; «אני לוקח» והעתקה לוואטסאפ. בלי שרת ובלי חשבון, בלי סנכרון בין מכשירים. | פיילוט מחפש משתתפים | מחפשים 10 משקי בית לפיילוט חינמי | הדגמה לפי בקשה |
+| **PeerEd** | משבץ חונכים לתלמידים לפי מקצוע, אזור וחפיפת שעות, בדפדפן ובלי פרטים מזהים. | פיילוט מחפש משתתפים | רכזי חונכות — כלי שיבוץ חינמי | הדגמה לפי בקשה |
+| **EcoExchange** | דף קטלוג עם סינון וחיפוש; הפריטים הם דוגמאות, לא מודעות אמיתיות. השירות עוד לא פעל מול אף עסק. | דמו | מסעדה שנסגרת? נמכור את הציוד בשבילך | הדגמה לפי בקשה |
+| **ParkWiz** | מפת חניית רחוב בנתניה: סיכוי לפי שעה ודיווח «אני עוזב». אין הזנה עירונית חיה; דיוק בשטח לא נמדד. | דמו | סקר תפוסה ממצלמה קיימת — אנונימי, בלי זיהוי לוחיות | [דמו](https://swissystem7.github.io/ParkWiz/) · [קוד](https://github.com/Swissystem7/ParkWiz) |
+| **AlbumScan** | מאתר תמונות בצילום של עמוד אלבום, חותך, מתקן צבעים ומוריד ZIP — בדפדפן, בלי העלאה. עדיין בענף פיתוח; נבדק רק על עמודים מחוללים. | כלי עובד | חיתוך אלבומים בדפדפן, בלי העלאה — הורים שינסו אותו | הדגמה לפי בקשה |
+| **ScoutAI** | כלי לימוד: בונים ציון מרוכב מנתוני StatsBomb Open Data עם נוסחה גלויה. לא שירות סקאוטינג ולא AI; הרישיון אוסר מסחר. | כלי עובד | שותף אחד שמלמד ניתוח ספורט, לפיילוט | [דמו](https://swissystem7.github.io/ScoutAI/) · [קוד](https://github.com/Swissystem7/ScoutAI) |
+| **MelodyMath** | תרגול חשבון לכיתות א׳–ד׳ עם מצב כיתה וערכת פיילוט למורה; הכל בדפדפן, בלי חשבון. | דמו | מחנכות שילוב שינסו את הכלי בכיתה | [דמו](https://swissystem7.github.io/MelodyMath/) · [קוד](https://github.com/Swissystem7/MelodyMath) |
+| **TrainerHub** | תוכנית אימון שבועית למאמן עצמאי, ספריית סרטונים בעברית ושיתוף בלינק. אין סליקה ואין לקוח משלם. | דמו | מאמנים עצמאיים לשיחה קצרה | [דמו](https://swissystem7.github.io/TrainerHub/) · [קוד](https://github.com/Swissystem7/TrainerHub) |
+| **SmartMount** | קושחת ESP32 ומעבדה וירטואלית לתושבת טלוויזיה נגד בוהק. הקושחה עוד לא רצה על לוח. | פורטפוליו | — | [דמו](https://swissystem7.github.io/SmartMount/) · [קוד](https://github.com/Swissystem7/SmartMount) |
+| **PassPilot** | אבחון לפי מבנה מבחן בארבעה קורסי אפקה: דוח מרחק ממבנה, קוד PP1, ותוכנית לפי תאריך מבחן. בלי קוד PPU1 מהאגודה — 5 שאלות בלבד, ודוח המבנה וקוד PP1 נעולים. לא מודל הסתברות מכויל. ציון עובר באפקה הוא 60. | PIVOT | — | [דמו](https://swissystem7.github.io/PassPilot/) · [קוד](https://github.com/Swissystem7/PassPilot) |
+| **PanimGuide** | מדריך עברי RTL למורשת הטקסטואלית של חכמת הפנים. לא כלי אבחון: אין מצלמה, אין העלאת תמונה, אין ניתוח של אדם חי. כולל דף היסטוריה על דחיית הפיזיוגנומיה המדעית. | חדש | — | [דמו](https://swissystem7.github.io/PanimGuide/) · [קוד](https://github.com/Swissystem7/PanimGuide) |
+
+**יצירת קשר:** [פתיחת פנייה ב־GitHub](https://github.com/Swissystem7/swissystem7.github.io/issues/new?template=contact.yml). הפנייה ציבורית — בלי מספר טלפון או פרטים אישיים.
 
 ---
 
 ## איך אני עובד
 
-שישה ריפואים עברו את אותו מחזור. המסמך המלא יושב ב־`RESEARCH.md` — עם קישורים, לא עם תחושות. פנים־מדריך חדש, בלי פסק שוק.
+הפרויקטים עברו את אותו מחזור — עם קישורים, לא עם תחושות. בספרינט של 28.9.2026 כל פרויקט קיבל ציון כן מ־0 עד 10 (כאב, מי משלם, תחרות, בנייה לבד, מוכנות קוד, זמן לשקל ראשון), ואף אחד לא עבר את 5 — לכן יש פיילוטים חינמיים עם תנאי עצירה, לא מחירים. פנים־מדריך חדש, בלי פסק שוק.
 
 1. **סקירת קוד חיצונית.** קוראים את מה שרץ באמת, לא את הפיץ׳. באגי יושרה יורדים לפני שהולכים לשוק.
 2. **מחקר שוק עם מקורות.** מי המתחרה, מי הקונה שמשלם היום, ומה הראיות. מחיר בלי דף רשמי מסומן «לא נמצא מקור».
