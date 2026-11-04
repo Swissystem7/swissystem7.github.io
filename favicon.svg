@@ -1,12 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="אס">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="460 125 1040 1040" role="img" aria-label="S7">
+  <!-- S7 monogram, traced from the Meta AI idea in design/meta (ALL-502). Background tile keeps it legible at 16px. -->
   <style>
-    .bg { fill: #1c1914; }
-    .fg { fill: #f3efe6; }
+    .bg { fill: #f3efe6; }
+    .s { fill: #1c1914; }
+    .seven { fill: #2f6fd6; }
     @media (prefers-color-scheme: dark) {
-      .bg { fill: #f3efe6; }
-      .fg { fill: #1c1914; }
+      .bg { fill: #1c1914; }
+      .s { fill: #f3efe6; }
+      .seven { fill: #6ea3ff; }
     }
   </style>
-  <rect class="bg" width="32" height="32" rx="7"/>
-  <text class="fg" x="16" y="22" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700">אס</text>
+  <rect class="bg" x="460" y="125" width="1040" height="1040" rx="220"/>
+  <path class="s" d="M642 354H828L775 447H698L616 600H1043L1097 692L963 938H518L571 846H906L988 692H563L509 601Z"/>
+  <path class="seven" d="M828 354H1448L1150 938H1044L1293 447H775Z"/>
 </svg>

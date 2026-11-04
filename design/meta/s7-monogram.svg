@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="490 340 980 610" role="img" aria-label="S7">
+  <!-- Hand-traced vector of the Meta AI "S7 monogram" (ALL-502-logo-1-S7-monogram.png, generated 2026-11-02). -->
+  <style>
+    .s { fill: #1c1914; }
+    .seven { fill: #3a86ff; }
+    @media (prefers-color-scheme: dark) { .s { fill: #f0ebe1; } }
+  </style>
+  <path class="s" d="M642 354H828L775 447H698L616 600H1043L1097 692L963 938H518L571 846H906L988 692H563L509 601Z"/>
+  <path class="seven" d="M828 354H1448L1150 938H1044L1293 447H775Z"/>
+</svg>
